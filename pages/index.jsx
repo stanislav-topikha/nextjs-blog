@@ -24,8 +24,19 @@ export default function Home({ allPostsData }) {
       <section className={utilStyles.headingMd}>
         <p>Hi! I'm Stanislav, a Front End developer, here is my <a href="https://github.com/stanislav-topikha">GitHub</a></p>
         <p>
-          (This is a sample website - I created on this{' '}
+          (This is a sample website - I created it on this{' '}
           <a href="https://nextjs.org/learn">Next.js tutorial</a>.)
+        </p>
+        <p>
+          <Link href='/api/hello'>
+            <a>
+              Hello API
+            </a>
+          </Link>
+          {` | `}
+          <Link href='api/posts'>
+            <a>Posts API</a>
+          </Link>
         </p>
       </section>
 
